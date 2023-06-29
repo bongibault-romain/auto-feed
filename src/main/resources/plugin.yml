@@ -1,0 +1,9 @@
+name: AutoFeed
+version: '${project.version}'
+main: lt.bongibau.autofeed.AutoFeedPlugin
+api-version: '1.14'
+load: POSTWORLD
+authors:
+  - 82.111.109.49
+prefix: 'AutoFeed'
+database: false
