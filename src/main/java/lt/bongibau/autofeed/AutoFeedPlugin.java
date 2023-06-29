@@ -55,7 +55,9 @@ public final class AutoFeedPlugin extends JavaPlugin implements Listener {
 
     private void register(String materialString, double foodLevel, double saturation) {
         Material material = Material.matchMaterial(materialString);
-        
+
+        if (material == null) return;
+
         Vector<Double> values = new Vector<Double>();
         values.add(foodLevel);
         values.add(saturation);
